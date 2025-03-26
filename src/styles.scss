@@ -2,3 +2,61 @@
 @import 'normalize.css';
 @import 'primeicons/primeicons.css';
 @import 'custom.scss';
+
+$primary-black-color: #000000;
+$primary-white-color: #FFFFFF;
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: $primary-white-color;
+}
+
+//Clases para los diferentes pesos de Poppins
+.poppins-thin {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
+.poppins-light {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.poppins-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.poppins-medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.poppins-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.poppins-black {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+
+.poppins-italic {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}

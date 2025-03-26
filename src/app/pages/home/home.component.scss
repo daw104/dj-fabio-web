@@ -1,0 +1,70 @@
+.hero-section {
+  background: url("/background-home.jpeg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+
+  .hero-content {
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-button {
+    font-size: 1rem;
+  }
+}
+
+.hero-section-services {
+  height: 100vh;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+
+
+  .hero-section-services-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+
+    .hero-section-img {
+      flex: 0 0 25%;
+      position: relative;
+
+      .centered-img-texts {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+    }
+
+    img {
+      height: 100%; /* Hace que las imágenes ocupen todo el alto del contenedor */
+      object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsionarse */
+    }
+
+  }
+
+  @media (max-width: 800px) {
+    .hero-section-services-image-container {
+      flex-direction: column;
+    }
+  }
+
+}
