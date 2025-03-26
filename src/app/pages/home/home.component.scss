@@ -10,25 +10,25 @@
   .hero-content {
     max-width: 600px;
     padding: 20px;
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .hero-text {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-button {
+      font-size: 1rem;
+    }
   }
 
-  .hero-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-
-  .hero-text {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-
-  .hero-button {
-    font-size: 1rem;
-  }
 }
 
 .hero-section-services {
-  height: 100vh;
   text-align: center;
   color: white;
   padding: 2rem;
@@ -55,16 +55,36 @@
     }
 
     img {
-      height: 100%; /* Hace que las imágenes ocupen todo el alto del contenedor */
-      object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsionarse */
+      height: 100%;
+      object-fit: cover;
     }
 
   }
+}
 
-  @media (max-width: 800px) {
-    .hero-section-services-image-container {
-      flex-direction: column;
-    }
+.hero-section-about {
+  text-align: center;
+  background-color: #000000;
+  padding: 2rem;
+
+  .img-container-about {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 3rem;
+    gap: 2rem;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .hero-section-services-image-container {
+    flex-direction: column !important;
   }
 
+  .img-container-about {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
 }
