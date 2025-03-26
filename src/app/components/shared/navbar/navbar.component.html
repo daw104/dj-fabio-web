@@ -7,7 +7,9 @@
   <ng-template #end>
     <div class="d-flex items-center gap-2">
       <ng-container *ngFor="let item of items">
-        <a pRipple class="flex items-center p-menubar-item-link">
+        <a pRipple
+           [routerLink]="[item.routerLink]"
+           class="flex items-center p-menubar-item-link">
           <span>{{ item.label }}</span>
         </a>
       </ng-container>

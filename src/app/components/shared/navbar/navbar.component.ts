@@ -1,21 +1,17 @@
 import {Component, OnInit} from '@angular/core';
 import {Menubar} from 'primeng/menubar';
-import {Badge} from 'primeng/badge';
-import {Avatar} from 'primeng/avatar';
 import {MenuItem} from 'primeng/api';
-import {NgClass, NgForOf, NgIf} from '@angular/common';
+import {NgForOf} from '@angular/common';
 import {Ripple} from 'primeng/ripple';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   imports: [
     Menubar,
-    Badge,
-    Avatar,
-    NgClass,
-    NgIf,
     Ripple,
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
@@ -28,18 +24,22 @@ export class NavbarComponent implements OnInit {
       {
         label: 'Home',
         icon: 'pi pi-home',
+        routerLink: '/',
       },
       {
         label: 'Servicios',
         icon: 'pi pi-search',
+        routerLink: '/services',
       },
       {
         label: 'Acerca',
         icon: 'pi pi-search',
+        routerLink: '/about',
       },
       {
         label: 'Contacto',
         icon: 'pi pi-search',
+        routerLink: '/contact',
       },
     ];
   }
