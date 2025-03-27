@@ -29,6 +29,21 @@ h1 {
   }
 }
 
+/*Eventos privados*/
+.img-container-privates {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 3rem;
+  gap: 3rem;
+
+
+  .img-container-15-years-club-img {
+    flex: 0 0 40%;
+  }
+
+}
+
 
 @media (max-width: 800px) {
   .img-container-section-club {
@@ -48,5 +63,15 @@ h1 {
       padding-top: 3rem;
     }
   }
+
+  .img-container-privates {
+    flex-direction: column-reverse !important;
+    text-align: center !important;
+
+    h2 {
+      padding-top: 3rem;
+    }
+  }
+
 
 }
