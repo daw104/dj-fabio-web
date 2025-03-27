@@ -12,5 +12,4 @@ import {Image} from 'primeng/image';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  email: string = 'fabiofasciano97@gmail.com';
 }

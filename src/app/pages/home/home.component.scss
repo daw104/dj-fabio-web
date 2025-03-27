@@ -108,30 +108,6 @@
 
 }
 
-.hero-section-social-media {
-  background-color: #a9a7a2;
-
-  .hero-section-social-media-container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5rem;
-  }
-
-  .hero-section-social-media-icons {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1rem;
-
-    a {
-      font-size: 2rem;
-    }
-
-  }
-
-}
-
 
 @media (max-width: 800px) {
   .hero-section-services-image-container {
