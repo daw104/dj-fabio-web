@@ -25,33 +25,39 @@
   </div>
   <div class="hero-section-services-image-container pt-5">
     <div class="hero-section-img">
-      <p-image src="/services_1.jpg" alt="Image"
-               [preview]="true"/>
+      <a [routerLink]="['/services']" fragment="clubs">
+        <p-image src="/services_1.jpg" alt="Image"
+                 [preview]="true"/>
+      </a>
       <div class="centered-img-texts">
         <h2>
-          <a href="#">
+          <a [routerLink]="['/services']" fragment="clubs">
             Discotecas
           </a>
         </h2>
       </div>
     </div>
     <div class="hero-section-img">
-      <p-image src="/services_2.jpg" alt="Image"
-               [preview]="true"/>
+      <a [routerLink]="['/services']" fragment="15years">
+        <p-image src="/services_2.jpg" alt="Image"
+                 [preview]="true"/>
+      </a>
       <div class="centered-img-texts">
         <h2>
-          <a href="#">
+          <a [routerLink]="['/services']" fragment="15years">
             15 años
           </a>
         </h2>
       </div>
     </div>
     <div class="hero-section-img">
-      <p-image src="/services_3.jpg" alt="Image"
-               [preview]="true"/>
+      <a [routerLink]="['/services']" fragment="private-events">
+        <p-image src="/services_3.jpg" alt="Image"
+                 [preview]="true"/>
+      </a>
       <div class="centered-img-texts">
         <h2>
-          <a href="#">
+          <a [routerLink]="['/services']" fragment="private-events">
             Privados
           </a>
         </h2>
