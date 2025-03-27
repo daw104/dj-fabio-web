@@ -8,3 +8,8 @@
 .p-menubar-start {
   flex-grow: 1;
 }
+
+.p-menubar-item:not(.p-disabled) > .p-menubar-item-content:hover,
+.p-menubar-item.p-focus > .p-menubar-item-content {
+  background: transparent !important;
+}

@@ -3,7 +3,7 @@ import {Menubar} from 'primeng/menubar';
 import {MenuItem} from 'primeng/api';
 import {NgForOf} from '@angular/common';
 import {Ripple} from 'primeng/ripple';
-import {RouterLink} from '@angular/router';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -11,7 +11,8 @@ import {RouterLink} from '@angular/router';
     Menubar,
     Ripple,
     NgForOf,
-    RouterLink
+    RouterLink,
+    RouterLinkActive
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
