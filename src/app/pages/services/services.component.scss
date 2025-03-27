@@ -8,6 +8,25 @@ h1 {
   align-items: center;
   flex-direction: row;
   padding: 3rem;
+  gap: 3rem;
+}
+
+/*15 años*/
+.services-15-years-clubs {
+  background-color: #000000;
+  color: #FFFFFF;
+
+  .img-container-15-years-club {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3rem;
+    gap: 3rem;
+
+    .img-container-15-years-club-img {
+      flex: 0 0 40%;
+    }
+  }
 }
 
 
@@ -21,5 +40,13 @@ h1 {
     }
   }
 
+  .img-container-15-years-club {
+    flex-direction: column-reverse !important;
+    text-align: center !important;
+
+    h2 {
+      padding-top: 3rem;
+    }
+  }
 
 }
