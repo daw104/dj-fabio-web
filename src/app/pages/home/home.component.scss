@@ -76,6 +76,38 @@
   }
 }
 
+.hero-section-partners {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+
+.hero-section-partners-image-container {
+
+
+  .hero-section-img {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    flex: 0 0 30%;
+
+
+    .centered-img-texts {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+
+  img {
+    height: 100%;
+  }
+
+}
+
 
 @media (max-width: 800px) {
   .hero-section-services-image-container {
@@ -86,5 +118,8 @@
     flex-direction: column !important;
     align-items: center !important;
     text-align: center;
+  }
+  .hero-section-img {
+    flex-direction: column !important;
   }
 }
