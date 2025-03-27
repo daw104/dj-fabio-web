@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ButtonDirective} from "primeng/button";
 
 @Component({
   selector: 'app-services',
-  imports: [],
+  imports: [
+    ButtonDirective
+  ],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss'
 })
